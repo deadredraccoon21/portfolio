@@ -32,33 +32,58 @@
             <h2 class="text-center mb-4">Medical Chatbot using Llama2</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p> </p>
-                    <img src="images/p1sc.png" class="img-fluid mb-4" alt="screenshot1">
-                    <img src="images/p1sc2.png" class="img-fluid" alt="screenshot2">
+                    <!-- Clickable image 1 to open modal -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                        <img src="images/p1sc.png" class="img-fluid mb-4" alt="screenshot1">
+                    </a>
+                    <!-- Clickable image 2 to open modal -->
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                        <img src="images/p1sc2.png" class="img-fluid" alt="screenshot2">
+                    </a>
                 </div>
                 
                 <div class="col-md-6">
                     <h3>About the Project</h3>
                     <p>An AI-powered medical chatbot using the Llama2 model to assist with medical inquiries, providing accurate and reliable information.</p>
-<p>➢ <strong>Technologies Used:</strong></p>
-<ul>
-    <li>Python for scripting and automation</li>
-    <li>LangChain for integrating and managing multiple language models</li>
-    <li>FAISS for efficient vector storage and retrieval</li>
-    <li>PyTorch and Transformers for deep learning model implementation</li>
-    <li>Chainlit for creating interactive and dynamic prompts</li>
-</ul>
-<p>➢ Implemented document loaders (PyPDFLoader, DirectoryLoader) to process medical documents and data</p>
-<p>➢ Developed custom prompt templates to enhance the chatbot's response accuracy and reliability</p>
-<p>➢ Utilized HuggingFaceEmbeddings for advanced natural language processing tasks</p>
-<p>➢ Integrated CTTransformers and RetrievalQA for optimizing the chatbot's information retrieval capabilities</p>
-<p>➢ <strong>Code:</strong> <a href="https://github.com/deadredraccoon21/Medical-chatbot-using-Llama2" target="_blank">https://github.com/deadredraccoon21/Medical-chatbot-using-Llama2</a></p>
-
-                    <!-- Add more detailed project info here -->
+                    <p>➢ <strong>Technologies Used:</strong></p>
+                    <ul>
+                        <li>Python for scripting and automation</li>
+                        <li>LangChain for integrating and managing multiple language models</li>
+                        <li>FAISS for efficient vector storage and retrieval</li>
+                        <li>PyTorch and Transformers for deep learning model implementation</li>
+                        <li>Chainlit for creating interactive and dynamic prompts</li>
+                    </ul>
+                    <p>➢ Implemented document loaders (PyPDFLoader, DirectoryLoader) to process medical documents and data</p>
+                    <p>➢ Developed custom prompt templates to enhance the chatbot's response accuracy and reliability</p>
+                    <p>➢ Utilized HuggingFaceEmbeddings for advanced natural language processing tasks</p>
+                    <p>➢ Integrated CTTransformers and RetrievalQA for optimizing the chatbot's information retrieval capabilities</p>
+                    <p>➢ <strong>Code:</strong> <a href="https://github.com/deadredraccoon21/Medical-chatbot-using-Llama2" target="_blank">https://github.com/deadredraccoon21/Medical-chatbot-using-Llama2</a></p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal 1 for Image -->
+    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="images/p1sc.png" class="img-fluid" alt="screenshot1" style="width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 for Image -->
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="images/p1sc2.png" class="img-fluid" alt="screenshot2" style="width: 100%; height: auto; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
